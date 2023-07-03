@@ -47,12 +47,15 @@
 			  </div>
 			  <div class="col">
 			    <label class="form-label" for="grad-year-select">Graduation Year</label>
-			    <select class="form-select invalid-feedback " required id="grad-year-select">
-				  <option value="select" class="invalid-feedback" selected disabled>Select</option>	
-			      <option value="2020" class="invalid-feedback">2020</option>
-			      <option value="2021" class="invalid-feedback">2021</option>
-			      <option value="2022" class="invalid-feedback">2022</option>
-				  <option value="2023" class="invalid-feedback">2023</option>
+			    <select class="form-select is-invalid" required id="grad-year-select" aria-describedby="yearError">
+				  <option value="select"  selected disabled>Select</option>	
+			      <option value="2020">2020</option>
+			      <option value="2021">2021</option>
+			      <option value="2022">2022</option>
+				  <option value="2023">2023</option>
+				<div id="yearError" class="invalid-feedback">
+					      Please enter a valid graduation year.
+				</div>
 			    </select>
 			  </div>
 			  <div class="col">
