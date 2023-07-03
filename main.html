@@ -19,61 +19,59 @@
 			    <label class="form-label" for="first-name-input">First Name</label>
 			    <input type="text" class="form-control is-invalid" id="first-name-input" required aria-describedby="fnameError">
 			    <div id="fnameError" class="invalid-feedback">
-					      Please enter a valid name.
+					      First name Required!
 				</div>
 			  </div>
 			  <div class="col">
 			    <label class="form-label" for="last-name-input">Last Name</label>
 			    <input type="text" class="form-control is-invalid " id="last-name-input" required aria-describedby="lnameError">
 			    <div id="lnameError" class="invalid-feedback">
-					      Please enter a valid name.
+					      Last name Required!
 				</div>
 			  </div>
 			  <div class="col">
 			    <label class="form-label" for="email-input">Email Address</label>
 			    <input type="email" class="form-control is-invalid" id="email-input" required placeholder="xyz@gmail.com" aria-describedby="emailError">
 				    <div id="emailError" class="invalid-feedback">
-					      Please enter a valid email address.
+					      Email Required!
 				    </div>  
 			  </div>
 		  </div>
 		  <div class="row form-group">
 			  <div class="col">
 			    <label class="form-label" for="college-input">College</label>
-			    <input type="text" class="form-control is-invalid" required id="college-input" aria-describedby="collegeError">
-			    <div id="collegeError" class="invalid-feedback">
-					      Please enter a valid college name.
+			    <input type="text" class="form-control is-invalid" required id="college-input">
+			    <div  class="invalid-feedback">
+					      Please provide a valid college				
 				</div>
 			  </div>
 			  <div class="col">
 			    <label class="form-label" for="grad-year-select">Graduation Year</label>
 			    <select class="form-select is-invalid" required id="grad-year-select" aria-describedby="yearError">
-				<div id="yearError" class="invalid-feedback">
-					      Please enter a valid graduation year.
-				</div>
-				  <option value="select"  selected disabled>Select</option>	
+				  <option value="select"  selected disabled>Choose</option>	
 			      <option value="2020">2020</option>
 			      <option value="2021">2021</option>
 			      <option value="2022">2022</option>
 				  <option value="2023">2023</option>
 			    </select>
+				  <div id="yearError" class="invalid-feedback">
+					      Please select a valid Graduation Year.
+				</div>
 			  </div>
 			  <div class="col">
 			    <label class="form-label" for="roll-no-input">Roll No.</label>
 			    <input type="text" class="form-control is-invalid" required id="roll-no-input" aria-describedby="rollnoError" >
 			    <div id="rollnoError" class="invalid-feedback">
-					      Please enter a valid roll no.
+					      Please provide a valid Roll no.
 				</div>
 			  </div>
 			</div>
 		    <div>
-				<label class="form-label" for="conditions-checkbox">Agree to terms and conditions</label>
-			    <input type="checkbox" class="form-check-input from-control is-invalid" id="conditions-checkbox" required aria-describedby="conditionError">
-                <div id="feedbackError" class="invalid-feedback">
-					      Please enter a valid condition.
-				</div>
-				
-				
+				<input type="checkbox" class="form-check-input from-control is-invalid" id="conditions-checkbox" required >
+				<label class="form-label" for="conditions-checkbox" aria-describedby="conditionError">Agree to terms and conditions</label>
+                <div id="conditionError" class="invalid-feedback">
+					      You must agree before submitting.
+				</div>		
 			</div>
 			<div>
 		        <button type="submit" class="btn btn-primary">Submit form</button>
