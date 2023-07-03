@@ -17,11 +17,17 @@
 		  <div class="row form-group">
 			  <div class="col">
 			    <label class="form-label" for="first-name-input">First Name</label>
-			    <input type="text" class="form-control" id="first-name-input" required placeholder="Enter your first name">
+			    <input type="text" class="form-control is-invalid" id="first-name-input" required aria-describedby="fnameError">
+			    <div id="fnameError" class="invalid-feedback">
+					      Please enter a valid name.
+				</div>
 			  </div>
 			  <div class="col">
 			    <label class="form-label" for="last-name-input">Last Name</label>
-			    <input type="text" class="form-control " id="last-name-input" required placeholder="Enter your last name">
+			    <input type="text" class="form-control is-invalid " id="last-name-input" required aria-describedby="lnameError">
+			    <div id="lnameError" class="invalid-feedback">
+					      Please enter a valid name.
+				</div>
 			  </div>
 			  <div class="col">
 			    <label class="form-label" for="email-input">Email Address</label>
@@ -34,11 +40,14 @@
 		  <div class="row form-group">
 			  <div class="col">
 			    <label class="form-label" for="college-input">College</label>
-			    <input type="text" class="form-control " required id="college-input" >
+			    <input type="text" class="form-control is-invalid" required id="college-input" aria-describedby="collegeError">
+			    <div id="collegeError" class="invalid-feedback">
+					      Please enter a valid college name.
+				</div>
 			  </div>
 			  <div class="col">
 			    <label class="form-label" for="grad-year-select">Graduation Year</label>
-			    <select class="form-select " required id="grad-year-select">
+			    <select class="form-select is-invalid " required id="grad-year-select">
 				  <option value="select" selected disabled>Select</option>	
 			      <option value="2020">2020</option>
 			      <option value="2021">2021</option>
@@ -48,13 +57,18 @@
 			  </div>
 			  <div class="col">
 			    <label class="form-label" for="roll-no-input">Roll No.</label>
-			    <input type="text" class="form-control " required id="roll-no-input"  >
+			    <input type="text" class="form-control is-invalid" required id="roll-no-input" aria-describedby="rollnoError" >
+			    <div id="rollnoError" class="invalid-feedback">
+					      Please enter a valid roll no.
+				</div>
 			  </div>
 			</div>
 		    <div>
-				<label class="form-label" for="conditions-checkbox">Agree to trems and conditions</label>
-			    <input type="checkbox" class="from-control" id="conditions-checkbox" required>
-
+				<label class="form-label" for="conditions-checkbox">Agree to terms and conditions</label>
+			    <input type="checkbox" class="from-control is-invalid" id="conditions-checkbox" required aria-describedby="conditionError">
+                <div id="feedbackError" class="invalid-feedback">
+					      Please enter a valid condition.
+				</div>
 				
 				
 			</div>
